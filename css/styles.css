@@ -825,7 +825,7 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
 
@@ -834,7 +834,7 @@ img {
 }
 
 .modal-label {
-  display: inline-block;
+  display: block;
   margin-bottom: 4px;
   width: 41px;
   color: #8e8f99;
@@ -889,7 +889,9 @@ img {
   fill: #2e2f42;
   transition: fill var(--transition);
 }
-
+.form-block-coment {
+  margin-bottom: 16px;
+}
 .modal-textarea {
   width: 100%;
   height: 120px;
@@ -909,7 +911,9 @@ img {
 .modal-textarea:focus {
   border-color: var(--accent-color);
 }
-
+.form-block-check {
+  margin-bottom: 24px;
+}
 .check-text {
   font-size: 12px;
   line-height: 1.17;
@@ -924,6 +928,7 @@ img {
 }
 
 .check-text span {
+  display: inline-flex;
   width: 16px;
   height: 16px;
   flex-shrink: 0;
@@ -934,10 +939,11 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color border fill var(--transition);
 }
 
 .input-check:checked + .check-text span {
-  border: 1px solid #404bbf;
+  border: none;
   background-color: #404bbf;
   fill: #f4f4fd;
 }
