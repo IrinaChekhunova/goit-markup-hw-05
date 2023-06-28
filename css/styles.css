@@ -590,26 +590,31 @@ img {
 }
 .footer-form {
   display: flex;
+  gap: 24px;
 }
 .footer-input {
   width: 264px;
   height: 40px;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #ffffff;
   border-radius: 4px;
   border: 1px solid #fff;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   margin-right: 24px;
   padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
 }
 .footer-input::placeholder {
-  color: #fff;
+  color: #ffffff;
   font-size: 12px;
   line-height: 2;
   letter-spacing: 0.05em;
   align-items: center;
 }
 .footer-btn {
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
@@ -621,8 +626,8 @@ img {
   align-items: center;
   gap: 16px;
   border-radius: 4px;
-  background: #4d5ae5;
-  max-width: 165px;
+  background-color: #4d5ae5;
+  min-width: 165px;
   min-height: 40px;
   cursor: pointer;
   border: none;
@@ -637,6 +642,7 @@ img {
   fill: #ffffff;
   width: 24px;
   height: 24px;
+  margin-left: 16px;
 }
 /* --------------Portfolio------------------ */
 .container-portfolio {
