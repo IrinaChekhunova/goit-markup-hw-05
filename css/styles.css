@@ -933,7 +933,9 @@ img {
   text-decoration: underline;
   color: var(--accent-color);
 }
-
+.check-span {
+  display: inline-flex;
+}
 .check-text span {
   display: inline-flex;
   width: 16px;
